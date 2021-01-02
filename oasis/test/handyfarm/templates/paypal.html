@@ -1,0 +1,78 @@
+{% extends "layout.html" %}
+{% block head %}
+    <style>
+        .modal-content{
+            position:absolute;
+            top:250px; 
+        }
+        .bootbox-close-button{
+            display: none;
+        }
+    </style>
+{% endblock head %}
+{% block content %}
+<section id="banner">
+    <div class="inner">
+        <h2 style="font-weight:bold">주문지 / 결제</h2>
+    </div>
+</section>
+    <section id="two" class="wrapper style2">
+        <div class="container">
+            <div class="row">
+                <div class="6u">
+                    <section class="special"
+                        style="border: 1px solid grey; border-radius: 10px; box-shadow: 0px 0px 5px 2px rgba(134,132,130,0.8); background-color: #ffffff;">
+                        <h2 style="text-align: left; margin: 10px; font-weight: 1000;background-color:#238B57; color: white;" >배송지</h2>
+                        <p style="text-align: left; margin: 10px; font-style: unset;">주소 : 광주광역시 남구 봉선동 한국아델리움 102동 801호</p>
+                        <img src="../static/images/r_arrow.png" style="position: absolute; top: 235px; left: 300px;">
+                        <p style="text-align: left; margin: 10px; font-style: unset;">휴대폰 : 010-3393-2949</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="two" class="wrapper style2">
+        <div class="container">
+            <div class="row">
+                <div class="6u">
+                    <section class="special"
+                        style="border: 1px solid grey; border-radius: 10px; box-shadow: 0px 0px 5px 2px rgba(134,132,130,0.8); background-color: #ffffff;">
+                        <h2 style="text-align: left; margin: 10px; font-weight: 1000;background-color:#238B57; color: white;" >배송 요청사항</h2>
+                        <p style="text-align: left; margin: 10px; font-style: unset;">문앞에 두고 가주세요</p>
+                        <img src="../static/images/r_arrow.png" style="position: absolute; top: 455px; left: 300px;">
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="two" class="wrapper style2">
+        <div class="container">
+            <div class="row">
+                <div class="6u">
+                    <section class="special"
+                        style="border: 1px solid grey; border-radius: 10px; box-shadow: 0px 0px 5px 2px rgba(134,132,130,0.8); background-color: #ffffff;">
+
+                        <h2 style="text-align: left; margin: 10px; font-weight: 1000;background-color:#238B57; color: white;" >결제수단</h2>
+                        <p style="text-align: left; margin: 10px; font-style: unset;">농협 간편결제</p>
+                        <img src="../static/images/r_arrow.png" style="position: absolute; top: 610px; left: 300px;">
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="two" class="wrapper style2">
+        <div class="container">
+            <div class="row">
+                <div class="6u">
+                    <section class="special"
+                        style="border: 1px solid grey; border-radius: 10px; box-shadow: 0px 0px 5px 2px rgba(134,132,130,0.8); background-color: #ffffff;">
+                        <h2 style="text-align: left; margin: 10px; font-weight: 1000;background-color:#238B57; color: white;" >현금영수증</h2>
+                        <p style="text-align: left; margin: 10px; font-style: unset;">010-3393-2949 (소득 공제)</p>
+                        <img src="../static/images/r_arrow.png" style="position: absolute; top: 765px; left: 300px;">
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock content %}
