@@ -1,5 +1,5 @@
 from datetime import datetime
-from handyfarm import db, login_manager
+from hanbap import db, login_manager
 from flask_login import UserMixin
 
 @login_manager.user_loader

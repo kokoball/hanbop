@@ -20,4 +20,4 @@ login_manager.login_message_category='info'
 
 
 
-from handyfarm import routes
+from hanbap import routes
