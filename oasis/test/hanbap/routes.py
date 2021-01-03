@@ -229,17 +229,6 @@ Ineymd = "20201212"
 
 # print(InquireBalance(Tsymd, Iscd, IsTuno, AccessToken, FinAcno))
 
-# oauth2 = UserOAuth2(app)
-
-#농장 더미데이터
-# farms=[
-#     {
-#         'farmer': 'minsung',
-#         'title': 'seoul_smart_farm',
-#         'content': 'very very good farm',
-#         'resist_date': 'Decembrer 8, 2020'
-#     }
-# ]
 
 @app.route("/")
 
@@ -247,10 +236,6 @@ Ineymd = "20201212"
 @app.route("/home")
 def home():
     return render_template('home.html')
-#농장
-# @app.route("/farm")
-# def farm():
-#     return render_template('farm.html', title='Farm') #전달해주는 인자
 
 @app.route("/myfarm")
 def farm():
@@ -299,18 +284,8 @@ def register():
         return redirect(url_for('login'))
     return render_template('register.html', title='Register', form=form)
 
-# 구글로그인
-# @app.route("/googlelogin", methods=['GET','POST'])
-# @oauth2.required
-# def googlelogin():
-#     if oauth2.has_credentials():
-#         return redirect(url_for('home'))
-#     else:
-#         print('login No')
-#     return render_template('googlelogin.html')
-#로그인
-@app.route("/login", methods=['GET', 'POST'])
-# @oauth2.required
+
+@app.route("/login", methods=['GET', 'POST'])   
 def login():
     if current_user.is_authenticated: # 로그인 되어있으면
         return redirect(url_for('home')) # 홈페이지로
@@ -324,6 +299,7 @@ def login():
         else:        
             flash('Login Unsuccessful. Please check username and password', 'danger')
     return render_template('login.html', title='Login', form=form)
+
 #로그아웃
 @app.route("/logout")
 def logout():
@@ -365,7 +341,7 @@ def account():
     return render_template('account.html', title='Account', image_file=image_file, form = form)
 
 
-count = 2750
+count = 3500
 
 @app.route("/final_subscription", methods=['GET', 'POST'])
 def final_subscription():

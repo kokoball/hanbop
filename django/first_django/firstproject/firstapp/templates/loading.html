@@ -1,0 +1,11 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    {% load static %}
+    <link rel='stylesheet' type='text/css' href="{% static 'index.css' %}"/>
+    <br><br>
+    <div class='loading'>
+        <div class="loader"></div>
+        <h3>변환 중</h3>
+    </div>
+{% endblock  %}

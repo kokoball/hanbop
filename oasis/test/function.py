@@ -193,9 +193,9 @@ def InquireBalance(Tsymd, Iscd, IsTuno, AccessToken, FinAcno):  # 잔액조회
     return x["Ldbl"] 
 
 
-Tsymd = "20201212" # 오늘날짜
+Tsymd = "20201213" # 오늘날짜
 Iscd = "000723"  # 기관코드
-IsTuno = "0052" # 기관거래고유번호
+IsTuno = "0056" # 기관거래고유번호
 AccessToken = "4d60bf5b7376fdca75b5a61080c2f5a3e55e21562757c12fad2ee736075f3d28" # 인증키
 BrdtBrno = "19501212"  # 생년월일
 Bncd = "011" # 은행코드
@@ -211,7 +211,7 @@ FinAcno = "00820100007230000000000004841"
 
 Tram = 10000 # 만원
 DractOtlt = "하.."
-#print(DrawingTransfer(Tsymd, Iscd, IsTuno, AccessToken, FinAcno, Tram, DractOtlt))
+print(DrawingTransfer(Tsymd, Iscd, IsTuno, AccessToken, FinAcno, Tram, DractOtlt))
 
 Insymd = "20201211"
 Ineymd = "20201212"
