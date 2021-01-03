@@ -9,8 +9,8 @@ def extract_wav(file_path):
     file_name = file_path.split('\\')[-1].split('.')[0]
     path_to_media = file_path.split(file_name)[0]
 
-    # C:\Users\ssy01\OneDrive - 고려대학교\인공지능사관학교\TEAM8_Hackathon\해커톤\team8_hackathon\first_django\firstproject\media\ted2_cut.mp4
-
+    
+    
     clip = mp.VideoFileClip(file_path)
     
     clip.audio.write_audiofile(path_to_media+f"{file_name}.wav")
