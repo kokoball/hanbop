@@ -233,6 +233,10 @@ Ineymd = "20201212"
 @app.route("/")
 
 #첫페이지
+@app.route("/startPage")
+def start_page():
+    return render_template('startPage.html')
+
 @app.route("/home")
 def home():
     return render_template('home.html')

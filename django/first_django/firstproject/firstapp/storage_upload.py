@@ -30,7 +30,7 @@ if __name__ == "__main__":
     file_name = 'gp'
     file_path = f'./src/mono_wav/{file_name}.wav'
     upload_blob(
-        bucket_name='my_first_ko',
+        bucket_name='my_first_ko2',
         source_file_name=file_path,
         destination_blob_name=file_name
     )

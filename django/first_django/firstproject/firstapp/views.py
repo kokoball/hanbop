@@ -44,13 +44,13 @@ def loading(request):
     file_name = file.pic
     file_name = str(file_name).split('.')[0]
     print('##########',file_name)
-    gs_uri = f'gs://my_first_ko/{file_name}'
+    gs_uri = f'gs://my_first_ko2/{file_name}'
 
     path_to_wav = extract_wav(file_path)
     path_to_mediadir = path_to_wav.split(file_name)[0]
     print('########extract_wav completed')
 
-    upload_blob(bucket_name='my_first_ko', source_file_name=path_to_wav, destination_blob_name=file_name)
+    upload_blob(bucket_name='my_first_ko2', source_file_name=path_to_wav, destination_blob_name=file_name)
 
     print('########upload to storage completed')
 

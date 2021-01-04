@@ -14,7 +14,7 @@ def combined(file_name, file_path, gs_uri):
 
     print('########extract_wav completed')
 
-    upload_blob(bucket_name='my_first_ko', source_file_name=path_to_wav, destination_blob_name=file_name)
+    upload_blob(bucket_name='my_first_ko2', source_file_name=path_to_wav, destination_blob_name=file_name)
     
     print('########upload to storage completed')
 
